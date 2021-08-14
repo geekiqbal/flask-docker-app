@@ -4,6 +4,7 @@ from flask_restful import Api, Resource
 app = Flask(__name__)
 api = Api(app)
 
+#fuctions used for validation user requested data
 def validate_inputs(reqData):
     status_code = None
 
