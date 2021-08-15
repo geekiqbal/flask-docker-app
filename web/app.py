@@ -9,9 +9,9 @@ def validate_inputs(reqData):
     status_code = None
 
     try:
-        x = reqData["x"]
-        y = reqData["y"]
-        x = float(x)
+        x = reqData["x"]      #required user input
+        y = reqData["y"]      
+        x = float(x)          #converting string to float and if not convertible than exception handles it
         y = float(y)
         status_code = 200
 
@@ -21,6 +21,7 @@ def validate_inputs(reqData):
 
     return status_code
 
+#here goes classes for all of the requests
 
 class Add(Resource):
     def post(self):       
